@@ -14,6 +14,26 @@ Backend-Service zur Bereitstellung der Test-APIs für die Bachelorarbeit
 - **Media-Service** (Foto, Audio, Video)  
 - **Blog-Service** (verschachtelte Datenstruktur)
 
+# Testdaten
+Im Projektordner `Common/Payload` sind Strukturen für die Beispielinhalte vorbereitet:
+
+- **Text**
+  - `small.txt`
+  - `medium.txt`
+  - `large.txt`
+
+- **Media**
+  - `foto.jpg`
+  - `music.wav`
+  - `video.mp4`
+
+- **Blog**
+  - `BlogData.cs`
+  - `BlogPost.cs`
+
+Diese Dateien sind im Repository **nicht mit Inhalten befüllt**, um die Datenmenge klein zu halten.  
+Falls der Prototyp getestet werden soll, müssen diese Inhalte (Texte, Bilder, Audio, Video) mit den oben angeführten Namen in die jeweiligen Ordner kopiert werden.
+
 ## Nutzung mit den Clients
 
 ### Web-Client
