@@ -1,0 +1,15 @@
+﻿syntax = "proto3";
+
+option csharp_namespace = "GrpcWebApi.Protos";
+
+import "google/protobuf/empty.proto";
+
+message Chunk {
+  bytes data = 1;
+}
+
+service Media {
+  rpc GetImage(google.protobuf.Empty) returns (stream Chunk);
+  rpc GetAudio(google.protobuf.Empty) returns (stream Chunk);
+  rpc GetVideo(google.protobuf.Empty) returns (stream Chunk);
+}
